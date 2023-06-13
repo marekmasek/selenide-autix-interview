@@ -55,7 +55,7 @@ public class HomePage extends MasterPage {
 
   public HomePage verifyUrl(Localization localization) {
     log.info("Checking that url is matching the expected localization: " + localization.name());
-    String expectedUrl = TestProperties.getBaseUrl();
+    String expectedUrl = getBaseUrl();
     expectedUrl = EN.equals(localization) ? expectedUrl : expectedUrl + localization.getIsoCode();
     webdriver().shouldHave(url(expectedUrl));
     return this;

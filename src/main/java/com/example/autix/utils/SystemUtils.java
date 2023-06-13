@@ -10,11 +10,10 @@ import org.apache.commons.lang3.StringUtils;
 public class SystemUtils {
 
   /**
-   * Method reads Environment Variable and System Property. If it's required, and it's missing, it will throw an
-   * Exception!
+   * Method reads Environment Variable and System Property. If it's required, and it's missing, it will throw an Exception!
    */
   public static String getEnvSysVar(String name) {
-    String result = null;
+    String result;
 
     var property = System.getProperty(name);
     var envVariable = System.getenv(name);
