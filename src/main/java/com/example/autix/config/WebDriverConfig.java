@@ -12,8 +12,8 @@ public class WebDriverConfig {
   public static void initWebDriver() {
     Configuration.fastSetValue = true; // Should speed up entering text
     Configuration.browser = "chrome";
-    setChromeSpecificOptions();
     Configuration.browserSize = "1920x1080";
+    setChromeSpecificOptions();
 
     WebDriverRunner.addListener(new DriverListener());
   }

@@ -7,7 +7,7 @@ import lombok.extern.log4j.Log4j2;
 public class SelenideConfig {
 
   public static void configSelenide() {
-    Configuration.timeout = 30000L;
+    Configuration.timeout = 15000L;
     Configuration.baseUrl = TestProperties.getBaseUrl();
     Configuration.pageLoadStrategy = "normal";
   }
