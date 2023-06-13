@@ -1,4 +1,4 @@
-package com.example.autix.utils.asserts;
+package com.example.autix.utils;
 
 import lombok.experimental.UtilityClass;
 import org.testng.asserts.SoftAssert;

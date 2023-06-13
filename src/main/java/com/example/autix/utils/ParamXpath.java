@@ -43,11 +43,11 @@ public class ParamXpath {
 
   public ParamXpath join(ParamXpath... paramXpaths) {
     return paramXpath(
-        this.toString() + Stream.of(paramXpaths).map(ParamXpath::toString).collect(Collectors.joining("")));
+        this + Stream.of(paramXpaths).map(ParamXpath::toString).collect(Collectors.joining("")));
   }
 
   public ParamXpath join(String... xpaths) {
-    return paramXpath(this.toString() + String.join("", xpaths));
+    return paramXpath(this + String.join("", xpaths));
   }
 
   @Override

@@ -15,8 +15,6 @@ public class DriverListener implements WebDriverListener {
   public void beforeClick(WebElement element) {
     log.info("Clicking on element: " + element.getText());
     highlight(element, "red");
-    //Point location = element.getLocation();
-    //executeJavaScript("window.scrollTo(" + location.getX() + ", " + location.getY() + ')');
   }
 
   @Override

@@ -3,8 +3,8 @@ package com.example.autix;
 import static com.example.autix.config.SelenideConfig.configSelenide;
 import static com.example.autix.config.TestProperties.initTestProperties;
 import static com.example.autix.config.WebDriverConfig.initWebDriver;
-import static com.example.autix.utils.asserts.SoftAssertHelper.clearSoftAssert;
-import static com.example.autix.utils.asserts.SoftAssertHelper.getSoftAssert;
+import static com.example.autix.utils.SoftAssertHelper.clearSoftAssert;
+import static com.example.autix.utils.SoftAssertHelper.getSoftAssert;
 import static org.testng.ITestResult.FAILURE;
 
 import com.example.autix.listener.TestLogListener;
