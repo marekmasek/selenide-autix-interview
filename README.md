@@ -1,4 +1,4 @@
-# AT AUTIX SELENIDE INTERVIEW
+# AT AUTIX SELENIDE JAVA INTERVIEW
 
 This project contains example tests for Autix.eu
 
